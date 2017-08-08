@@ -1,0 +1,79 @@
+body{
+  font-family: sans-serif;
+  text-transform: capitalize;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width 80%;
+}
+
+header{
+  margin: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+}
+
+input{
+  width: 50%;
+  height: 30px;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+hr{
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 35px;
+
+}
+
+.filter{
+  background-color: rgba(226, 224, 195, 0.7);
+  height: 100%;
+  width: 100%;
+}
+
+div{
+  height: 20vh;
+  width: 20%;
+  margin: 10px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.divCatcher{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p{
+  height: 20px;
+  width: 100px;
+  margin: 0;
+
+}
