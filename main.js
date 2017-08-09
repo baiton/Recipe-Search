@@ -7,7 +7,7 @@ let getSearch =
 
 // + getSearch.value  needs to concat to fetch url
 
-fetch("http://crossorigin.me/http://www.recipepuppy.com/api/?q=pizza")
+fetch("http://crossorigin.me/http://www.recipepuppy.com/api/?q=breakfast")
   .then(function(response) {
     console.log("response status", response.status);
     response.json()
