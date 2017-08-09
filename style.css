@@ -1,30 +1,33 @@
 body{
+  color: #185323;
   font-family: sans-serif;
   text-transform: capitalize;
-  background-color: lightgray;
+  background-color: #3A7769;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width 80%;
+  width: 90%;
 }
 
 header{
-  margin: 40px;
+  margin: 40px 0px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 80%;
+  width: 98%;
 }
 
 input{
   width: 50%;
   height: 30px;
-  margin-top: 50px;
+  margin: 50px 0px 30px 0px;
   background-color: #f2f2f2;
   border-style: none;
   font-size: 16px;
@@ -34,31 +37,38 @@ hr{
   width: 100%;
   border-style: solid;
   border-width: thin;
-  margin-top: 35px;
-
 }
 
 .filter{
-  background-color: rgba(226, 224, 195, 0.7);
+  background-color: rgba(217, 254, 230, 0.74);
   height: 100%;
   width: 100%;
 }
 
 div{
+  border-radius: 10px;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 250px;
   width: 250px;
   margin: 10px;
+  transition: .5s;
 }
+
+
+div:hover section{
+  box-shadow: 10px, 5px;
+}
+
 
 img{
   width: 100%;
   height: 100%;
 }
 
-section{
+div > section{
+    border-radius: 10px;
     width: 100%;
     height: 100%;
 }
@@ -71,15 +81,25 @@ ul{
   flex-direction: column;
 }
 
-.recipeName{
-  margin-bottom: 20px;
+li{
+  margin-top: 5px;
+  margin-left: 10px;
+
 }
 
-.divCatcher{
-  width: 90%;
+.recipeName{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.div-catcher{
+  background-color: #7DCEB8;
+  border-radius: 10px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 p{
@@ -87,4 +107,19 @@ p{
   width: 100px;
   margin: 0;
 
+}
+
+.beemo-face{
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("http://25.media.tumblr.com/d1148d6e744fba137f18ed39e5c978ae/tumblr_mif384hUGM1s64bkco1_500.gif");
+  width: 80%;
+  height: 500px;
+}
+
+a{
+  text-align: center;
+  color: #315E54;
 }
