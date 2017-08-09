@@ -25,16 +25,13 @@ fetch("http://crossorigin.me/http://www.recipepuppy.com/api/?q=pizza")
 
           function myHtml(data) {
             let results = `
-        <div id="recipe">
-          <img src="${recipe.thumbnail}" alt="">
-          <article class="">
+        <div id="recipe" style="background-image: url(${recipe.thumbnail})">
             <section class="filter">
               <ul>
-                <li><a href="${recipe.href}">${recipe.title}</a></li>
-                <li>ingredients: ${recipe.ingredients}</li>
+                <li class="recipeName"><a href="${recipe.href}">${recipe.title}</a></li>
+                <li class="ingredients">ingredients: ${recipe.ingredients}</li>
               </ul>
             </section>
-          </article>
         </div>
         `
             return results;
@@ -45,3 +42,7 @@ fetch("http://crossorigin.me/http://www.recipepuppy.com/api/?q=pizza")
         }
       })
   })
+
+
+// style="background-image: url:(http://img.recipepuppy.com/152332.jpg)"
+// style="background-image: url(http://i54.tinypic.com/4zuxif.jpg)"
